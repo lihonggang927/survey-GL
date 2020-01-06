@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!--<file>${filePath}/${logName}.html</file>-->
+	<!--<fileNamePattern>${filePath}/${logName}.%i</fileNamePattern>-->
+	<!-- 基础日志文件定义，各模块的日志在此基础上修改 -->
+	<appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+		<connectionSource
+			class="ch.qos.logback.core.db.DataSourceConnectionSource">
+			<dataSource
+				class="com.mchange.v2.c3p0.ComboPooledDataSource">
+				<driverClass>com.mysql.jdbc.Driver</driverClass>
+				<jdbcUrl>jdbc:mysql://localhost:3306/survey</jdbcUrl>
+				<user>root</user>
+				<password>root</password>
+			</dataSource>
+		</connectionSource>
+	</appender>
+	
+	<!-- 保存测评结果 -->
+	<logger additivity="false" name="saveSurveyDetail">
+		<level value="info" />
+		<appender-ref ref="DB" />
+	</logger>
+	
+	<!-- 系统日志 -->
+	<logger additivity="false" name="system">
+		<level value="info" />
+		<appender-ref ref="DB" />
+	</logger>
+	
+		<!-- 权限日志 -->
+	<logger additivity="false" name="right">
+		<level value="info" />
+		<appender-ref ref="DB" />
+	</logger>
+	<!-- 综合查询日志 -->
+	<logger additivity="false" name="statistics">
+		<level value="info" />
+		<appender-ref ref="DB" />
+	</logger>
+	<!-- 根日志 -->
+	<root>
+		<level value="error" />
+		<appender-ref ref="DB" />
+	</root>
+</configuration>
+	

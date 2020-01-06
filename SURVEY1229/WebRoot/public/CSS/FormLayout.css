@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+.allow-float {
+	clear: none !important;
+}
+
+.stop-float {
+	clear: both !important;
+}
+
+.right-part {
+	float: left;
+	padding: 0 0 0 20px;
+}
+
+.only-float {
+	float: left;
+}
+.break {word-break: break-all;}
+a  { font:normal 12px 宋体; color:#FF0000; text-decoration:none; }

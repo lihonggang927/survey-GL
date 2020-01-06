@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="SURVEY1229"
+  id="myeclipse.1314681171319"
+  context-root="/SURVEY1209"
+  j2ee-spec="5.0"
+  archive="SURVEY1229.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

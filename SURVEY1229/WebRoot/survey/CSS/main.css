@@ -1,0 +1,121 @@
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.bigdiv {
+	text-align: left;
+	margin: auto;
+}
+
+/**头部样式表开始**/
+#header {
+	background: url(../../images/survey/header_common.png) repeat-x;
+}
+
+#header_top {
+	width: 960px;
+	height: 84px;
+	background: url(../../images/survey/header_middle.png);
+	position: relative;
+}
+
+/**头部样式表结束**/ 
+
+
+/**监测标准表头开始**/
+.surveySpace {
+	width: 300px;
+	float: left;
+}
+
+.surveyStandard {
+	display: block;
+	float: none;
+	clear: left;
+}
+
+.surveySort {
+	display: block;
+	float: none;
+	clear: left;
+}
+
+.surveyDIV {
+	display: block;
+	float: none;
+	clear: left;
+}
+
+.surveyStandardName {
+	float: left;
+	width: 150px;
+	text-align: center;
+	border-bottom: thick 1px black;
+	padding: none;
+	margin: none;
+}
+
+.surveyStandardNameDetail {
+	float: left;
+	width: 37.5px;
+	text-align: center;
+	padding: none;
+	margin: none;
+}
+
+/**监测标准表头结束**/
+
+
+
+.people {
+	display: block;
+	float: none;
+	clear: left;
+}
+.peopleNUM {
+	font-size: 12px;
+	width: 18px;
+	float: left;
+}
+.peopleName {
+	font-size: 12px;
+	width: 50px;
+	float: left;
+}
+
+.peoplePosition {
+	font-size: 12px;
+	width: 300;
+	float: left;
+}
+
+.surveyStandardBlock {
+	border: yellow 3px;
+	float: left;
+}
+
+.surveyStandardtrue {
+	background-color: e2d8f0;
+	border-right: 1px dashed blue;
+	border-left: 1px dashed blue;
+	border-bottom: 1px dashed blue;
+	width: 37.5px;
+	float: left;
+}
+
+.surveyStandardfalse {
+	background-color: d7e5f5;
+	border-right: 1px dashed blue;
+	border-left: 1px dashed blue;
+	border-bottom: 1px dashed blue;
+	width: 37.5px;
+	float: left;
+}

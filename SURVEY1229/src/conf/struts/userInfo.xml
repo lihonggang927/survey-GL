@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="userInfo" namespace="/" extends="default">
+		<!--
+			<action name="unitTypeInfo_*" class="unitTypeAction" method="{1}">
+			<result type="json" /> </action>
+		-->
+		<action name="*_userInfo" class="userInfoAction" method="{1}">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>

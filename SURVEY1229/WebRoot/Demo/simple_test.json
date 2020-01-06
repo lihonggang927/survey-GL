@@ -1,0 +1,59 @@
+{
+    "rows": [{
+        "id": 1,
+        "product": "博士",
+        "city": "工作思路",
+        "state": "NY",
+        "quantity": 5568,
+        "value": 17,
+        "month": 11,
+        "quarter": 3,
+        "year": 2010,
+        "person": "张利锋"
+    },{
+        "id": 2,
+        "product": "博士",
+        "city": "管理水平",
+        "state": "NY",
+        "quantity": 5568,
+        "value": 17,
+        "month": 11,
+        "quarter": 3,
+        "year": 2010,
+        "person": "张利锋"
+    },
+    {
+        "id": 3,
+        "product": "博士",
+        "city": "执行能力",
+        "state": "AZ",//n. 情形；国家；州 vt. 陈述；规定；声明 adj. 国家的；州的；正式的
+        "quantity": 7365,//n. 量，数量；总量；大量
+        "value": 21,//n. 价值；价格；重要性；值；确切涵义 vt. 评价；重视；估价
+        "month": 3,//n. 月，一个月的时间
+        "quarter": 2,//n. 四分之一；地区；季度；一刻钟；两角五分；[篮球]节；vi. 住宿；驻扎；vt. 将…四等分；供某人住宿；num. 四分之一
+        "year": 2010,
+        "person": "张利锋"
+    },{
+        "id": 4,
+        "product": "博士",
+        "city": "工作实绩",
+        "state": "NY",
+        "quantity": 5568,
+        "value": 17,
+        "month": 11,
+        "quarter": 3,
+        "year": 2010,
+        "person": "张利锋"
+    },{
+        "id": 5,
+        "product": "博士",
+        "city": "作风形象",
+        "state": "NY",
+        "quantity": 5568,
+        "value": 17,
+        "month": 11,
+        "quarter": 3,
+        "year": 2010,
+        "person": "张利锋"
+    }]
+}

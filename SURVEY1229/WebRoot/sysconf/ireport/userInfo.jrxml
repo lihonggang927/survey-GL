@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="userInfo" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="20">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Text Body" fontName="宋体" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+	<style name="Style_1" isDefault="true" fontName="宋体" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="password" class="java.lang.String">
+		<fieldDescription><![CDATA[password]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[username]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.String">
+		<fieldDescription><![CDATA[year]]></fieldDescription>
+	</field>
+	<field name="peopleType" class="com.donglusoft.sysconf.domain.PeopleType">
+		<fieldDescription><![CDATA[peopleType]]></fieldDescription>
+	</field>
+	<field name="unit" class="com.donglusoft.sysconf.domain.Unit">
+		<fieldDescription><![CDATA[unit]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="120" splitType="Stretch">
+			<textField>
+				<reportElement x="194" y="0" width="27" height="15"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="221" y="0" width="233" height="15"/>
+				<textElement>
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[年度处级干部考核民主测评]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="41" width="58" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="宋体" size="14" isItalic="false" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[用户名：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="195" y="41" width="91" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="286" y="41" width="50" height="16"/>
+				<textElement textAlignment="Right">
+					<font fontName="宋体" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[密码：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="336" y="41" width="159" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{password}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="62" width="72" height="15"/>
+				<textElement>
+					<font fontName="宋体"/>
+				</textElement>
+				<text><![CDATA[提示:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="77" width="436" height="15"/>
+				<textElement>
+					<font fontName="宋体" size="10" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[1,测评系统用户名密码随机生成，使用后自动失效。测评为无记名方式,不会记录您的个人信息.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="92" width="436" height="16"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[2.用户名密码不可修改。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="24" width="50" height="16"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[类型：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="195" y="24" width="66" height="16"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[""+$F{peopleType}.getName()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="286" y="24" width="50" height="16"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[单位：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="336" y="24" width="159" height="16"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[""+$F{unit}.getName()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

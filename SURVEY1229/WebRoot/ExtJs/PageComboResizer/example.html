@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Untitled Document</title>
+        <link rel="stylesheet" type="text/css" href="../lib/resources/css/ext-all.css"/>
+        <style type="text/css">
+            body {
+                font-family: helvetica, tahoma, verdana, sans-serif;
+                padding: 20px;
+                padding-top: 32px;
+                font-size: 13px;
+                background-color: #fff !important;
+            }
+			/*
+			*Ext.ux.PanelResizer插件需要次样式及对应图片文件
+			*/
+			.x-panel-resize {
+			        height:5px;
+			        background:transparent url(panel-handle.gif) no-repeat center bottom;
+			        position:relative;
+			        left:0;
+			        top:2px;
+			        cursor:n-resize;
+			        cursor:row-resize;
+			        /* for IE */
+			        font-size:1px;
+			        line-height:1px;
+			        overflow:hidden;
+			}
+        </style>
+        <link rel="stylesheet" type="text/css" href="../lib/resources/css/ext-all.css"/>
+        <style type="text/css">
+        </style>
+        <link rel="stylesheet" type="text/css" href="../resources/css/ext-all.css" />
+        <script type="text/javascript" src="../adapter/ext/ext-base.js">
+        </script>
+        <script type="text/javascript" src="../ext-all.js">
+        </script>
+		<script type="text/javascript" src="../src/locale/ext-lang-zh_CN.js">
+        </script>
+		
+        <script type="text/javascript" src="PagingStore.js">
+        </script>
+        <script type="text/javascript" src="PageComboResizer.js">
+        </script>
+		<script type="text/javascript" src="PanelResizer.js">
+        </script>
+        <script type="text/javascript" src="example.js">
+        </script>		
+    </head>
+    <body>
+		<div id="grid-example"></div>
+    </body>
+</html>

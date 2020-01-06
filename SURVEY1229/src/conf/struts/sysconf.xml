@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="sysconf" namespace="/" extends="default">
+		<!--
+			<action name="unitTypeInfo_*" class="unitTypeAction" method="{1}">
+			<result type="json" /> </action>
+		-->
+		<action name="*_people" class="peopleAction" method="{1}">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="*_unit" class="unitAction" method="{1}">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="*_peopleType" class="peopleTypeAction" method="{1}">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="*_surveyStandard" class="surveyStandardAction" method="{1}">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="*_survey" class="surveyStandardAction" method="{1}">
+			<result name="success" >/survey/survey.jsp</result>
+		</action>
+		<action name="*_userInfo" class="userInfoAction" method="{1}">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+	<package name="userInfoReport" namespace="/" extends="default,jasperreports-default">
+		<action name="*_userInfoReport" class="printUserInfoAction" method="{1}">
+			<result type="jasper">
+				<param name="location">/sysconf/ireport/userInfo.jasper</param>
+				<param name="dataSource">list</param>
+				<param name="format">PDF</param>
+			</result>
+		</action>
+	</package>
+</struts>

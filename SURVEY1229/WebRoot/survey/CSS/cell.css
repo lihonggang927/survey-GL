@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.my_row_abnormal table{ background:rgb(255,55,55)}
+.my_row_normal table{ background:rgb(100,240,120)}
+.my_row_other table{ background:Yellow}
+.red-row{background-color:#f5c0c0 !important;}
+.yellow-row{background-color:#fbf8bf !important;}
+.green-two{background-color:#e8dff4 !important;}
+.row-one{background-color:#ecedef !important;}
+.row-one_bak{background-color:#d2e1f4 !important;}
+
+.column-one{background-color:#e2d8f0 !important;}
+.column-two{background-color:#d7e5f5 !important;}
+
+.column-one_bak{background-color:#ccccff !important;}
+.column-two_bak{background-color:#ffcccc !important;}
+.column-three_bak{background-color:#99ccff !important;}
+.column-four_bak{background-color:#ccffcc! important;}

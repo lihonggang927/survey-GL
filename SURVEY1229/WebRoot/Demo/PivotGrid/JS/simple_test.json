@@ -1,0 +1,36 @@
+{
+    "rows": [{
+        "id": 1,
+        "product": "领导",
+        "city": "测试能力",
+        "state": "NY",
+        "quantity": 5568,
+        "value": "良",
+        "month": 11,
+        "quarter": 3,
+        "year": 2010,
+        "person": "令狐冲"
+    },{
+        "id": 2,
+        "product": "干部",
+        "city": "测试能力",
+        "state": "NY",
+        "quantity": 5568,
+        "value": "优",
+        "month": 11,
+        "quarter": 3,
+        "year": 2010,
+        "person": "令狐冲"
+    },{
+        "id": 3,
+        "product": "群众",
+        "city": "测试能力",
+        "state": "NY",
+        "quantity": 5568,
+        "value": "中",
+        "month": 11,
+        "quarter": 3,
+        "year": 2010,
+        "person": "令狐冲"
+    }]
+}
